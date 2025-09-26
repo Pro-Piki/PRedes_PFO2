@@ -25,8 +25,8 @@ La aplicación está construida con **Python, Flask y SQLite**, usando **autenti
 1. Clonar el repositorio:
 
 ```bash
-git clone <https://github.com/Pro-Piki/PRedes_PFO2.git>
-cd <PRedes_PFO2>
+git clone https://github.com/Pro-Piki/PRedes_PFO2.git
+cd  PRedes_PFO2
 ```
 
 2. Crear un entorno virtual:
@@ -48,6 +48,16 @@ source venv/bin/activate
 ```bash
 pip install -r requirements.txt
 ```
+
+---
+
+## Usuarios y contraseñas para testeos
+
+- Usuario: Pepe
+- Contraseña: 123
+
+- Usuario: Lola
+- Contraseña: 456
 
 ---
 
@@ -91,6 +101,7 @@ python client.py
 - El cliente utiliza autenticación básica para comunicarse con la API y permite realizar las mismas operaciones que la web, pero desde la consola.
 
 ---
+
 
 ## Endpoints de la API
 
@@ -159,7 +170,15 @@ python client.py
 
 ---
 
-## Captura de la web
+## Capturas de la web
+
+- Usuario 1 al loguearse y hacer click en Actualizar Lista accederá a sus tareas personales
+
+    ![usuario1](screenshot/web1.png)
+
+- Usuario 2 al loguearse y hacer click en Actualizar Lista accederá a sus tareas personales
+
+    ![usuario1](screenshot/web2.png)
 
 
 ---
