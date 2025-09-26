@@ -88,8 +88,7 @@ python client.py
     - 5. Editar tarea
     - 6. Eliminar tarea
     - 7. Salir
-    - Seleccione una opción:
- El cliente utiliza autenticación básica para comunicarse con la API y permite realizar las mismas operaciones que la web, pero desde la consola.
+- El cliente utiliza autenticación básica para comunicarse con la API y permite realizar las mismas operaciones que la web, pero desde la consola.
 
 ---
 
@@ -122,10 +121,12 @@ python client.py
 ---
 
 ## Respuestas Conceptuales
-- ¿Por qué hashear contraseñas?
+### ¿Por qué hashear contraseñas?
+
 Hashear contraseñas es una forma de protegerlas convirtiéndolas en un código irreconocible mediante una fórmula matemática. Esto se hace para que, aunque alguien acceda ilegalmente a la base de datos, no pueda ver ni usar las contraseñas reales. En lugar de guardar la contraseña tal cual, el sistema guarda solo su versión codificada (hash), que no se puede revertir fácilmente. Así, se cuida la privacidad del usuario y se evita que terceros puedan acceder a sus cuentas incluso si roban la información.
 
-- Ventajas de usar SQLite en este proyecto
+### Ventajas de usar SQLite en este proyecto
+
 Usar SQLite en este proyecto tiene ventajas porque es ligero, fácil de configurar y no requiere un servidor separado, lo que permite guardar y consultar los datos de usuarios y tareas de manera rápida y sencilla, ideal para proyectos pequeños o de prueba.
 
 ---
