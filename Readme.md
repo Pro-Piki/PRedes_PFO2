@@ -119,47 +119,48 @@ python client.py
 
 - Ejecución client.py:
 
-    ![client.py](screenshot\ejecución_client.png)
+    ![client.py](screenshot/ejecución_client.png)
 
 - Nuevo usuario:
 
-    ![Registro](screenshot\nuevo_usuario.png)
+    ![Registro](screenshot/nuevo_usuario.png)
 
 - Login:
 
-    ![Login](screenshot\login.png)
+    ![Login](screenshot/login.png)
 
 - Listar tareas:
 
-    ![Tareas](screenshot\tareas_vacias.png)
+    ![Tareas](screenshot/tareas_vacias.png)
 
 - Crear tareas:
 
-    ![CrearTareas](screenshot\creación_tarea.png)
+    ![CrearTareas](screenshot/creación_tarea.png)
 
 - Listar tareas actualizada:
 
-    ![Tareas](screenshot\tarea_actualizada.png)
+    ![Tareas](screenshot/tarea_actualizada.png)
 
 - Editar tarea:
 
-    ![EditarTareas](screenshot\tarea_editada.png)
+    ![EditarTareas](screenshot/tarea_editada.png)
 
 - Eliminar tarea:
 
-    ![EliminarTareas](screenshot\tarea_eliminada.png)
+    ![EliminarTareas](screenshot/tarea_eliminada.png)
 
 - Salir del menú:
 
-    ![Salir](screenshot\salir_client.png)
+    ![Salir](screenshot/salir_client.png)
 
 - Ejecución app.py:
 
-    ![app.py](screenshot\app_ejecutado.png)
+    ![app.py](screenshot/app_ejecutado.png)
 
 ---
 
 ## Captura de la web
+
 
 ---
 
