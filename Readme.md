@@ -2,7 +2,7 @@
 
 ## Sistema de Gestión de Tareas con API y Base de Datos
 
-## Descrpción
+## Descripción
 Este proyecto es una aplicación web y cliente de consola para **gestionar tareas**. Permite a los usuarios registrarse, iniciar sesión y realizar operaciones de **CRUD** (Crear, Leer, Editar, Eliminar) sobre sus tareas personales.  
 
 La aplicación está construida con **Python, Flask y SQLite**, usando **autenticación básica** y una interfaz web dinámica con **JavaScript**. También incluye un cliente en consola que permite interactuar con la API de manera similar a la web.
@@ -115,8 +115,51 @@ python client.py
 
 ---
 
-## Capturas
+## Capturas de la terminal
 
+- Ejecución client.py:
+
+![client.py](screenshot\ejecución_client.png)
+
+- Nuevo usuario:
+
+![Registro](screenshot\nuevo_usuario.png)
+
+- Login:
+
+![Login](screenshot\login.png)
+
+- Listar tareas:
+
+![Tareas](screenshot\tareas_vacias.png)
+
+- Crear tareas:
+
+![CrearTareas](screenshot\creación_tarea.png)
+
+- Listar tareas actualizada:
+
+![Tareas](screenshot\tarea_actualizada.png)
+
+- Editar tarea:
+
+![EditarTareas](screenshot\tarea_editada.png)
+
+- Eliminar tarea:
+
+![EliminarTareas](screenshot\tarea_eliminada.png)
+
+- Salir del menú:
+
+![Salir](screenshot\salir_client.png)
+
+- Ejecución app.py:
+
+![app.py](screenshot\app_ejecutado.png)
+
+---
+
+## Captura de la web
 
 ---
 
@@ -133,4 +176,3 @@ Usar SQLite en este proyecto tiene ventajas porque es ligero, fácil de configur
 
 **Materia:** Redes  
 **Carrera:** Tecnicatura Superior en Desarrollo de Software 
-**Fecha:** Septiembre 2025
