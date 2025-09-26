@@ -119,7 +119,7 @@ python client.py
 
 - Ejecución client.py:
 
-![client.py](screenshot\ejecución_client.png)
+![client.py](E:\PRedes_PFO2\screenshot\ejecución_client.png)
 
 - Nuevo usuario:
 
