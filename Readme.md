@@ -91,7 +91,8 @@ python client.py
 ```
 
 2. Seguir las opciones del menú:
-El cliente utiliza autenticación básica para comunicarse con la API y permite realizar las mismas operaciones que la web, pero desde la consola.
+
+- El cliente utiliza autenticación básica para comunicarse con la API y permite realizar las mismas operaciones que la web, pero desde la consola.
 
 ```
 
@@ -134,20 +135,41 @@ El cliente utiliza autenticación básica para comunicarse con la API y permite 
 
 ## Capturas de la consola
 
-- [Ver documentación completa en PDF](screenshot/Documentacion.pdf)
-
+- [Ver documentación completa](screenshot/Capturas_Consola.pdf)
 
 ---
 
 ## Capturas de la web
 
-- [Ver documentación completa en PDF](screenshot/Documentacion.pdf)
+- Registro y Login de usuario sin tareas:
+
+![Web Registro y Login](screenshot/web_nuevo_usuario.png)
+
+- Agregado de tarea: 
+
+![Web tarea](screenshot/web_tarea_agregada.png)
+
+- Tarea editada
+
+![Web tarea editada](screenshot/web_tarea_editada.png)
+
+- Consola server ejecutado usando la api web
+
+![Web server](screenshot/web_server.png)
 
 ---
 
 ## Pruebas en Thunder Client
 
-- [Ver documentación completa en PDF](screenshot/Documentacion.pdf)
+- [Ver documentación completa](screenshot/Capturas_Thunder_Client.pdf)
+
+---
+
+## Capturas de data.db y tasks.db
+
+![data.db](screenshot/data_db.png)
+
+![tasks.db](screenshot/tasks_db.png)
 
 ---
 
@@ -162,6 +184,6 @@ Usar SQLite en este proyecto tiene ventajas porque es ligero, fácil de configur
 
 ---
 
-**Autor:** Yamila Yoshiko Matayoshi
-**Materia:** Programación sobre Redes 
-**Carrera:** Tecnicatura Superior en Desarrollo de Software IFTS29
+- **Autor:** Yamila Yoshiko Matayoshi
+- **Materia:** Programación sobre Redes 
+- **Carrera:** Tecnicatura Superior en Desarrollo de Software IFTS29
