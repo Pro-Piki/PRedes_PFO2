@@ -1,4 +1,5 @@
 let authHeader = "";
+let usuarioLogueado = "";  // guardamos el nombre del usuario
 
 const BASE = "http://127.0.0.1:5000";
 
@@ -35,6 +36,7 @@ async function login() {
     const data = await res.json();
     if (res.ok) {
       authHeader = "Basic " + btoa(usuario + ":" + contraseña);
+      usuarioLogueado = usuario; // guardamos el usuario que se logueó
     }
     document.getElementById("outLogin").textContent = data.message || data.error;
   } catch (err) {
@@ -57,19 +59,29 @@ async function tareas() {
     });
     const tareas = await res.json();
 
-    let html = "<table border='1'><tr><th>ID</th><th>Título</th><th>Descripción</th><th>Acciones</th></tr>";
-    tareas.forEach(t => {
-      html += `<tr>
-                 <td>${t.id}</td>
-                 <td>${t.titulo}</td>
-                 <td>${t.descripcion}</td>
-                 <td>
-                    <button onclick="editarTarea(${t.id}, '${t.titulo}', '${t.descripcion}')">Editar</button>
-                    <button onclick="eliminarTarea(${t.id})">Eliminar</button>
-                 </td>
-               </tr>`;
-    });
-    html += "</table>";
+    let html = "";
+
+    if (tareas.length === 0) {
+      // caso sin tareas
+      html = `<h1>No hay tareas aún para <strong>${usuarioLogueado}</strong></h1>`;
+    } else {
+      // bienvenida + tabla
+      html = `<h1>Bienvenido ${usuarioLogueado} a sus tareas</h1>`;
+      html += "<table border='1'><tr><th>ID</th><th>Título</th><th>Descripción</th><th>Acciones</th></tr>";
+      tareas.forEach(t => {
+        html += `<tr>
+                   <td>${t.id}</td>
+                   <td>${t.titulo}</td>
+                   <td>${t.descripcion}</td>
+                   <td>
+                      <button onclick="editarTarea(${t.id}, '${t.titulo}', '${t.descripcion}')">Editar</button>
+                      <button onclick="eliminarTarea(${t.id})">Eliminar</button>
+                   </td>
+                 </tr>`;
+      });
+      html += "</table>";
+    }
+
     document.getElementById("outTareas").innerHTML = html;
   } catch (err) {
     console.error(err);

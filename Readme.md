@@ -11,7 +11,7 @@ La aplicación está construida con **Python, Flask y SQLite**, usando **autenti
 
 ## Tecnologías utilizadas
 
-- Python  
+- Python 3.13.7
 - Flask  
 - Flask-Bcrypt  
 - SQLite  
@@ -65,7 +65,7 @@ pip install -r requirements.txt
 
 1. Ejecutar el servidor:
 ```bash
-python app.py
+python server.py
 ```
 
 2. Abrir un navegador y acceder a: 
@@ -91,14 +91,20 @@ python client.py
 ```
 
 2. Seguir las opciones del menú:
-    - 1. Registrar usuario
-    - 2. Login
-    - 3. Listar tareas
-    - 4. Crear tarea
-    - 5. Editar tarea
-    - 6. Eliminar tarea
-    - 7. Salir
-- El cliente utiliza autenticación básica para comunicarse con la API y permite realizar las mismas operaciones que la web, pero desde la consola.
+El cliente utiliza autenticación básica para comunicarse con la API y permite realizar las mismas operaciones que la web, pero desde la consola.
+
+```
+
+=== Sistema de Gestión de Tareas ===
+1. Registrar usuario
+2. Login
+3. Listar tareas
+4. Crear tarea
+5. Editar tarea
+6. Eliminar tarea
+7. Salir
+
+```
 
 ---
 
@@ -126,60 +132,22 @@ python client.py
 
 ---
 
-## Capturas de la terminal
+## Capturas de la consola
 
-- Ejecución client.py:
+- [Ver documentación completa en PDF](screenshot/Documentacion.pdf)
 
-    ![client.py](screenshot/ejecución_client.png)
-
-- Nuevo usuario:
-
-    ![Registro](screenshot/nuevo_usuario.png)
-
-- Login:
-
-    ![Login](screenshot/login.png)
-
-- Listar tareas:
-
-    ![Tareas](screenshot/tareas_vacias.png)
-
-- Crear tareas:
-
-    ![CrearTareas](screenshot/creación_tarea.png)
-
-- Listar tareas actualizada:
-
-    ![Tareas](screenshot/tarea_actualizada.png)
-
-- Editar tarea:
-
-    ![EditarTareas](screenshot/tarea_editada.png)
-
-- Eliminar tarea:
-
-    ![EliminarTareas](screenshot/tarea_eliminada.png)
-
-- Salir del menú:
-
-    ![Salir](screenshot/salir_client.png)
-
-- Ejecución app.py:
-
-    ![app.py](screenshot/app_ejecutado.png)
 
 ---
 
 ## Capturas de la web
 
-- Usuario 1 al loguearse y hacer click en Actualizar Lista accederá a sus tareas personales
+- [Ver documentación completa en PDF](screenshot/Documentacion.pdf)
 
-    ![usuario1](screenshot/web1.png)
+---
 
-- Usuario 2 al loguearse y hacer click en Actualizar Lista accederá a sus tareas personales
+## Pruebas en Thunder Client
 
-    ![usuario1](screenshot/web2.png)
-
+- [Ver documentación completa en PDF](screenshot/Documentacion.pdf)
 
 ---
 
@@ -194,5 +162,6 @@ Usar SQLite en este proyecto tiene ventajas porque es ligero, fácil de configur
 
 ---
 
-**Materia:** Redes  
-**Carrera:** Tecnicatura Superior en Desarrollo de Software 
+**Autor:** Yamila Yoshiko Matayoshi
+**Materia:** Programación sobre Redes 
+**Carrera:** Tecnicatura Superior en Desarrollo de Software IFTS29

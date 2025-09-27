@@ -4,6 +4,7 @@ import base64
 
 BASE = "http://127.0.0.1:5000"
 auth_header = None  # Guarda la autorización luego del login
+current_user = None  # Guarda el usuario logueado
 
 
 def registrar():
@@ -23,7 +24,7 @@ def registrar():
 
 
 def login():
-    global auth_header
+    global auth_header, current_user
     usuario = input("Usuario: ")
     contraseña = input("Contraseña: ")
 
@@ -36,8 +37,8 @@ def login():
         data = res.json()
         print("Respuesta del servidor:", data.get("message") or data.get("error"))
         if res.ok:
-            # Guardamos auth_header para usar en otras funciones y así no repetimos nuevamente el ingreso de usuario y contraseña
             auth_header = "Basic " + base64.b64encode(f"{usuario}:{contraseña}".encode()).decode()
+            current_user = usuario
     except:
         print("Error al procesar la respuesta")
 
@@ -52,9 +53,10 @@ def listar_tareas():
         tareas = res.json()
         if isinstance(tareas, list):
             if not tareas:
-                print("No hay tareas aún.")
+                print(f"No hay tareas aún para {current_user}.")
             else:
-                print("\n--- Tareas ---")
+                print(f"\n<h1>Bienvenido {current_user} a sus tareas</h1>\n")
+                print("--- Tareas ---")
                 for t in tareas:
                     print(f"ID: {t['id']} | Título: {t['titulo']} | Descripción: {t['descripcion']}")
         else:
@@ -126,7 +128,7 @@ def eliminar_tarea():
 
 def menu():
     while True:
-        print("\n=== Cliente Consola ===")
+        print("\n=== Sistema de Gestión de Tareas ===")
         print("1. Registrar usuario")
         print("2. Login")
         print("3. Listar tareas")
